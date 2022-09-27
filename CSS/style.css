@@ -109,7 +109,6 @@ p{
     transform: translate(60%, 40%);
     clear: both;
 }
-
 .name{
     margin: 5px;
     font-family:'Barlow Semi Condensed', sans-serif;
@@ -121,4 +120,46 @@ p{
     font-family: 'Barlow Semi Condensed', sans-serif;
     -webkit-text-stroke: 2px #fff;
     color: transparent;
+}
+/*Atributo para seccion Mywork-AboutMe y Contact Me*/
+.cards{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.card-body{
+    margin:20px 30px;
+    clear: both;
+}
+/*Atributos Subtitulos*/
+.Ab{
+    margin: 15px;
+}
+.About{
+    font-size: 1.9em;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    display: inline-block;
+    position: relative;
+    margin: 15px 0;
+}
+.About::after{
+    content:'';
+    position: absolute;
+    width: 15px;
+    height: 1px;
+    background-color: var(--grey);
+    top: 0.8em;
+    right: -20px;
+}
+.me{
+    font-size: 1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.text-Ab{
+    margin-top: 7px;
+    color: var(--text);
+    text-align:left;
+    line-height: 30px;
 }
