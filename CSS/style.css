@@ -84,3 +84,41 @@ p{
     background-color: var(--white);
     margin: -7px;
 }
+/*Atributos imagen y nombre*/
+.card2{
+    position: relative;
+    float: right;
+    clear: both;
+    display: inline-flex;
+    overflow: hidden;
+    width: 100%;
+}
+.card-img{
+    float: right;
+    margin-left: auto;
+    width: auto;
+    height: auto;;
+   clear: both;
+}
+.card-text-me{
+    text-align: center;
+    color: var(--white);
+    position: absolute;
+    top: 200px;
+    left: 15px;
+    transform: translate(60%, 40%);
+    clear: both;
+}
+
+.name{
+    margin: 5px;
+    font-family:'Barlow Semi Condensed', sans-serif;
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
+.surname{
+    margin: -15px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+}
