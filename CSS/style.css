@@ -224,3 +224,96 @@ p{
     max-width: 220px;
     margin: auto;
 }
+/*Atributos Botones ContactMe*/
+.Contact-buttons{
+    display:flex;
+    min-width: 300px; 
+    max-width: 400px;
+    justify-content: space-between;
+    margin: auto;
+}
+.Contact-buttons a{
+    width: 60px;
+    height: 60px;
+    display: block;
+    border-radius: 50%;
+    color:var(--black);
+    background-color: var(--white);
+    text-decoration: none;
+    overflow: hidden;
+    text-align: center;
+    font-family: 'FontAwesome';
+    font-size: 2.6rem;
+    justify-content: center;
+}
+/*Atributos Botones ContactMe para hover*/
+.Contact-buttons a::before{
+    content:"\f095" ;
+    display: block;
+    margin: 10px 0;
+    transition: all .5s ease-in-out;
+}
+.Contact-buttons a:hover::before{
+    margin-top: -40px;
+}
+.Contact-buttons a::after{
+    content:"\f095";
+    display: block;
+}
+.Contact-buttons .two{
+    background-color:var(--white);
+}
+.Contact-buttons .two::before, .Contact-buttons .two::after{
+    content:"\f0e0";
+}
+.Contact-buttons .three{
+    background-color: var(--white);
+}
+.Contact-buttons .three::before, .Contact-buttons .three::after{
+    content:"\f09b" ;
+}
+.Contact-buttons .four{
+    background:var(--white);
+}
+.Contact-buttons .four::before, .Contact-buttons .four::after{
+    content:"\f16d";
+}
+/*Disminucion de pantallla*/
+@media (max-width: 954px){
+    h1{
+        font-size: 2.5em;
+    }
+    img.logo{
+        padding-left: 110px;
+        margin-top: 10px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    } 
+}
+@media (max-width: 600px){
+    img.logo{
+        padding-left: 110px;
+        margin-top: 10px;
+    }
+    nav ul{
+        margin-right: 33px;
+    }
+    nav ul li {
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 10px;
+    }
+    .card-text-me{
+        text-align: center;
+        color: var(--white);
+        position: absolute;
+        top: 200px;
+        left: 15px;
+        transform: translate(80%, 370%);
+        clear: both;
+    }
+   
+}
+
